@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"></android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/keyOneButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:onClick="keyOneButton"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/keyTwoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:onClick="keyTwoButton"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/keyThreeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:onClick="keyThreeButton"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/keyFourButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:onClick="keyFourButton"
+                android:text="4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/keyFiveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:onClick="keyFiveButton"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/keySixButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:onClick="keySixButton"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/keySevenButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:onClick="keySevenButton"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/keyEightButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:onClick="keyEightButton"
+                android:text="8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/keyNineButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:onClick="keyNineButton"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/keyZeroButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:onClick="keyZeroButton"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/channelUpButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:onClick="channelUpButton"
+                android:text="PROG+" />
+
+            <Button
+                android:id="@+id/channelDownButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:onClick="channelDownButton"
+                android:text="PROG-" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/volumeUpButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:onClick="volumeUpButton"
+                android:text="Vol+" />
+
+            <Button
+                android:id="@+id/volumeDownButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:onClick="volumeDownButton"
+                android:text="VOL-" />
+
+            <Button
+                android:id="@+id/powerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:onClick="powerButton"
+                android:text="pow" />
+
+            <Button
+                android:id="@+id/muteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:onClick="muteButton"
+                android:text="mute" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/navigation_menu"
+        android:layout_height="match_parent"
+        android:layout_gravity = "start"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/header"
+        >
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

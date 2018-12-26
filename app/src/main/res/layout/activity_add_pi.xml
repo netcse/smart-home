@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"></android.support.v7.widget.Toolbar>
+
+        <EditText
+            android:id="@+id/piMacEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="142dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:ems="10"
+            android:hint="Rasberry Pi MAC"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/piIpEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/piMacEditText"
+            android:layout_alignStart="@+id/piMacEditText"
+            android:layout_marginTop="39dp"
+            android:ems="10"
+            android:hint="Rasberry Pi IP"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/addRasberryPi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/piIpEditText"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="57dp"
+            android:layout_marginBottom="189dp"
+            android:onClick="addRasberryPi"
+            android:text="Add" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/navigation_menu"
+        android:layout_height="match_parent"
+        android:layout_gravity = "start"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/header"
+        >
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single" android:id="@+id/group1">
+        <item android:id="@+id/nav_dashboard"
+            android:title="Dashboard"></item>
+        <item android:id="@+id/nav_add_appliance"
+            android:title="Add Appliance"></item>
+        <item android:id="@+id/nav_add_pi"
+            android:title="Add Pi"></item>
+        <item android:id="@+id/nav_appliances"
+            android:title="Appliances"></item>
+    </group>
+    <group android:checkableBehavior="single" android:id="@+id/group2">
+        <item android:id="@+id/nav_logout"
+            android:title="Logout"></item>
+    </group>
+
+</menu>

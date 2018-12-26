@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"></android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="114dp"
+            android:text="Raspberry Pi List"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/piListAppSpinner"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/toolbar"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="114dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_toRightOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="32dp"
+            android:text="Appliance Type"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/applianceTypeSpinner"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/piListAppSpinner"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="32dp"
+            android:textSize="16sp"
+            android:text="Appliance Brand" />
+
+        <Spinner
+            android:id="@+id/applianceBrandSpinner"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/applianceTypeSpinner"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3" />
+
+        <LinearLayout
+            android:id="@+id/applianceInfo"
+            android:layout_width="302dp"
+            android:layout_height="146dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="161dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/applianceNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Appliance Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/pinNoEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Pin No"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/streamURLEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Stream URL"
+                android:inputType="textPersonName"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addApplianceButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="86dp"
+            android:onClick="addAppliance"
+            android:text="add" />
+
+    </RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/navigation_menu"
+        android:layout_height="match_parent"
+        android:layout_gravity = "start"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/header"
+        >
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>
